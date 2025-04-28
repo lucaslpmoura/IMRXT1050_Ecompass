@@ -132,7 +132,8 @@ source/main.o source/main.d: ../source/main.c \
  C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\component\phy/fsl_phy.h \
  ../source/button/button.h \
  C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_common_arm.h \
- ../source/globals/globals.h \
+ ../source/globals/globals.h ../source/ecompass/ecompass.h \
+ ../source/ecompass/fsl_fxos.h \
  C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\component\silicon_id/fsl_silicon_id.h
 C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\source\mcux_config.h:
 C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\lwip\src\include/lwip/opt.h:
@@ -268,4 +269,6 @@ C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst
 ../source/button/button.h:
 C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_common_arm.h:
 ../source/globals/globals.h:
+../source/ecompass/ecompass.h:
+../source/ecompass/fsl_fxos.h:
 C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\component\silicon_id/fsl_silicon_id.h:

@@ -1,0 +1,4 @@
+../source/ecompass/fsl_fxos.c:13:10:FXOS_Init	24	static
+../source/ecompass/fsl_fxos.c:174:10:FXOS_ReadSensorData	32	static
+../source/ecompass/fsl_fxos.c:203:10:FXOS_ReadReg	40	static
+../source/ecompass/fsl_fxos.c:216:10:FXOS_WriteReg	24	static

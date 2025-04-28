@@ -1,0 +1,3 @@
+../source/ecompass/ecompass.c:39:10:Sensor_Init	16	static
+../source/ecompass/ecompass.c:65:6:Sensor_ReadRawData	40	static
+../source/ecompass/ecompass.c:85:6:Sensor_ReadFormatedData	336	static

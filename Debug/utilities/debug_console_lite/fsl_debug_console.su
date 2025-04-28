@@ -8,5 +8,6 @@
 ../utilities/debug_console_lite/fsl_debug_console.c:189:5:DbgConsole_Scanf	40	static
 ../utilities/debug_console_lite/fsl_debug_console.c:248:5:DbgConsole_Getchar	16	static
 ../utilities/debug_console_lite/fsl_debug_console.c:275:13:DbgConsole_PrintfPaddingCharacter	32	static
-../utilities/debug_console_lite/fsl_debug_console.c:298:16:DbgConsole_ConvertRadixNumToString	64	static
-../utilities/debug_console_lite/fsl_debug_console.c:566:12:DbgConsole_PrintfFormattedData	120	static
+../utilities/debug_console_lite/fsl_debug_console.c:298:16:DbgConsole_ConvertRadixNumToString	200	static
+../utilities/debug_console_lite/fsl_debug_console.c:456:16:DbgConsole_ConvertFloatRadixNumToString	104	static
+../utilities/debug_console_lite/fsl_debug_console.c:566:12:DbgConsole_PrintfFormattedData	200	static

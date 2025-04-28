@@ -6,7 +6,7 @@
  * Generated linker script file for MIMXRT1052xxxxB
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on Apr 28, 2025, 3:49:37 PM
+ * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on Apr 28, 2025, 4:53:06 PM
  */
 
 INCLUDE "evkbimxrt1050_tst_lwip_dhcp_bm_Debug_library.ld"

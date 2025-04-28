@@ -16,6 +16,7 @@ RM := rm -rf
 -include source/rest_api/subdir.mk
 -include source/networking/subdir.mk
 -include source/globals/subdir.mk
+-include source/ecompass/subdir.mk
 -include source/button/subdir.mk
 -include source/subdir.mk
 -include lwip/src/netif/ppp/polarssl/subdir.mk

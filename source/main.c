@@ -16,6 +16,7 @@
 #include "networking/networking.h"
 #include "button/button.h"
 #include "globals/globals.h"
+#include "ecompass/ecompass.h"
 
 #if LWIP_IPV4 && LWIP_DHCP
 
@@ -114,6 +115,15 @@ int main(void)
     netif_set_default(&netif);
     netif_set_up(&netif);
 
+    //FXOS Init
+    if(Sensor_Init() != kStatus_Success){
+    	PRINTF("Magnetometer wont be used.\r\n");
+    }else{
+    	PRINTF("Magnetometer initialized successfully.\r\n");
+    }
+
+    Sensor_ReadFormatedData();
+
     while (ethernetif_wait_linkup(&netif, 5000) != ERR_OK)
     {
         PRINTF("PHY Auto-negotiation failed. Please check the cable connection and link partner setting.\r\n");
@@ -121,9 +131,7 @@ int main(void)
 
     dhcp_start(&netif);
     httpd_init();
-    PRINTF("\r\n************************************************\r\n");
-    PRINTF(" DHCP example\r\n");
-    PRINTF("************************************************\r\n");
+
 
     while (1)
     {

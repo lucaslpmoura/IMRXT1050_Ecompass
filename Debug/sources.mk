@@ -33,6 +33,7 @@ lwip/src/netif \
 lwip/src/netif/ppp \
 lwip/src/netif/ppp/polarssl \
 source/button \
+source/ecompass \
 source/globals \
 source \
 source/networking \
