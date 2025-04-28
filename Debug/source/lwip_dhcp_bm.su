@@ -1,0 +1,4 @@
+../source/lwip_dhcp_bm.c:62:13:linkStatusCallback	32	static
+../source/lwip_dhcp_bm.c:111:6:SysTick_Handler	8	static
+../source/lwip_dhcp_bm.c:121:13:print_dhcp_state	24	static
+../source/lwip_dhcp_bm.c:189:5:main	104	static

@@ -1,0 +1,2 @@
+../source/globals/globals.c:13:10:getNumOfPresses	4	static
+../source/globals/globals.c:17:6:increaseNumOfPresses	4	static

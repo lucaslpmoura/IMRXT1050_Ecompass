@@ -1,0 +1,2 @@
+../source/networking/networking.c:11:6:linkStatusCallback	32	static
+../source/networking/networking.c:57:6:print_dhcp_state	24	static

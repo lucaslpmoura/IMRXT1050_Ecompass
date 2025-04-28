@@ -1,0 +1,10 @@
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_common_arm.h:232:20:_SDK_AtomicLocalClearAndSet4Byte	48	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_clock.h:1465:20:CLOCK_ControlGate	32	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_clock.h:1482:20:CLOCK_EnableClock	16	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_iomuxc.h:1144:20:IOMUXC_EnableMode	24	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_gpio.h:101:20:GPIO_WritePinOutput	24	static
+../board/hardware_init.c:21:6:BOARD_InitModuleClock	16	static
+../board/hardware_init.c:27:13:MDIO_Init	8	static
+../board/hardware_init.c:33:10:MDIO_Write	16	static
+../board/hardware_init.c:38:10:MDIO_Read	16	static
+../board/hardware_init.c:43:6:BOARD_InitHardware	8	static
