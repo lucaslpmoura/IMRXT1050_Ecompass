@@ -23,9 +23,10 @@
 
 
 status_t Sensor_Init(void);
-void Magnetometer_Calibrate(void);
+status_t Sensor_Calibrate(uint32_t *arg);
+void Sensor_UseDefaultOffsets(void);
 void Sensor_ReadRawData(int16_t *Ax, int16_t *Ay, int16_t *Az, int16_t *Mx, int16_t *My, int16_t *Mz);
-void Sensor_ReadFormatedData();
+double Sensor_ReadFormatedData();
 
 
 

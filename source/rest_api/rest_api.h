@@ -9,11 +9,13 @@
 #define REST_API_H_
 
 #include "globals/globals.h"
+#include "ecompass/ecompass.h"
+#include "lwip/mem.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-char *get_byte_buffer(size_t *size_out);
+char *get_byte_buffer(size_t *size_out, char api);
 
 
 

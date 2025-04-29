@@ -18,6 +18,8 @@
 #include "globals/globals.h"
 #include "ecompass/ecompass.h"
 
+#include <stdbool.h>
+
 #if LWIP_IPV4 && LWIP_DHCP
 
 
@@ -61,9 +63,13 @@ static netif_ext_callback_t linkStatusCallbackInfo;
 /*!
  * @brief Interrupt service for SysTick timer.
  */
+
+uint32_t mag_counter = 0;
+bool mag_enable = false;
 void SysTick_Handler(void)
 {
     time_isr();
+    mag_counter++;
 }
 
 void Button_OnPressed(){
@@ -120,11 +126,13 @@ int main(void)
     	PRINTF("Magnetometer wont be used.\r\n");
     }else{
     	PRINTF("Magnetometer initialized successfully.\r\n");
+    	Sensor_UseDefaultOffsets();
+    	mag_enable = true;
     }
 
-    Sensor_ReadFormatedData();
 
-    while (ethernetif_wait_linkup(&netif, 5000) != ERR_OK)
+
+    while (ethernetif_wait_linkup(&netif, 1000) != ERR_OK)
     {
         PRINTF("PHY Auto-negotiation failed. Please check the cable connection and link partner setting.\r\n");
     }
@@ -135,14 +143,13 @@ int main(void)
 
     while (1)
     {
-        /* Poll the driver, get any outstanding frames */
         ethernetif_input(&netif);
 
-        /* Handle all system timeouts for all core protocols */
         sys_check_timeouts();
 
-        /* Print DHCP progress */
+
         print_dhcp_state(&netif);
+
     }
 }
 #endif

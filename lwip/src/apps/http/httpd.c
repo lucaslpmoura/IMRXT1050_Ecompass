@@ -2382,22 +2382,30 @@
 
  static err_t
  http_handle_api_call(struct http_state *hs, const char *uri, int is_09){
-
-     if(strcmp(uri, "/api/button") == 0){
+	 char api  = 0;
+     if(strcmp(uri, "/api/button/") == 0){
          PRINTF("Button api called.\r\n");
-         size_t buf_len = 0;
-         char *buffer = get_byte_buffer(&buf_len);
-         if (buffer != NULL) {
-             hs->original_file = buffer;
-             hs->file = hs->original_file;
-             PRINTF("Original file: %p\r\n", hs->file);
-             hs->handle = (struct fs_file*) NULL;
-             hs->left = buf_len;
-             hs->is_dynamic = true;
-             return ERR_OK;
-         }else{
-             return ERR_MEM;
-         }
+         api = 0;
+     }
+
+     if(strcmp(uri, "/api/ecompass/") == 0){
+    	 PRINTF("Ecompass api called.\r\n");
+    	 api = 1;
+     }
+
+
+     size_t buf_len = 0;
+     char *buffer = get_byte_buffer(&buf_len, api);
+     if (buffer != NULL) {
+    	 hs->original_file = buffer;
+    	 hs->file = hs->original_file;
+    	 PRINTF("Original file: %p\r\n", hs->file);
+    	 hs->handle = (struct fs_file*) NULL;
+    	 hs->left = buf_len;
+    	 hs->is_dynamic = true;
+    	 return ERR_OK;
+     }else{
+    	 return ERR_MEM;
      }
  }
 

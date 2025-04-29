@@ -29,7 +29,7 @@ static const char content_type_json[] = {
 
 		0x0d, 0x0a,
 };
-char *get_byte_buffer(size_t *size_out) {
+char *get_byte_buffer(size_t *size_out, char api) {
 
 	/*
 	 * For LWIP applications, use mem_malloc() instead of malloc().
@@ -47,7 +47,15 @@ char *get_byte_buffer(size_t *size_out) {
 
     // Payload
     char payload[64];
-    snprintf(payload, sizeof(payload), "{\"data\":\"%d\"}", getNumOfPresses());
+    if(api == 0){
+    	// Button API
+    	snprintf(payload, sizeof(payload), "{\"data\":\"%d\"}", getNumOfPresses());
+    }
+    if(api == 1){
+    	// Ecompass API
+    	snprintf(payload, sizeof(payload), "{\"data\":\"%f\"}", Sensor_ReadFormatedData());
+    }
+
     size_t payload_len = strlen(payload);
 
     // Content-Length

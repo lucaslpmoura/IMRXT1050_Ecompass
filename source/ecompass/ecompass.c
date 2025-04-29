@@ -13,28 +13,58 @@ uint8_t g_sensor_address[] = {0x1CU, 0x1EU, 0x1DU, 0x1FU};
 uint8_t g_sensorRange      = 0;
 uint8_t g_dataScale        = 0;
 
-int16_t g_Ax_Raw = 0;
-int16_t g_Ay_Raw = 0;
-int16_t g_Az_Raw = 0;
 
 double g_Ax = 0;
 double g_Ay = 0;
 double g_Az = 0;
 
-
+uint16_t g_Ax_Raw = 0;
+uint16_t g_Ay_Raw = 0;
+uint16_t g_Az_Raw = 0;
+uint16_t g_Mx_Raw = 0;
+uint16_t g_My_Raw = 0;
+uint16_t g_Mz_Raw = 0;
 
 int16_t g_Mx_Offset = 0;
 int16_t g_My_Offset = 0;
 int16_t g_Mz_Offset = 0;
 
+double g_Mx            = 0;
+double g_My            = 0;
+double g_Mz            = 0;
+
+double sinAngle         = 0;
+double cosAngle         = 0;
+double Bx               = 0;
+double By               = 0;
+
+double g_Mx_LP = 0;
+double g_My_LP = 0;
+double g_Mz_LP = 0;
 
 
+double g_Yaw    = 0;
+double g_Yaw_LP = 0;
+double g_Pitch  = 0;
+double g_Roll   = 0;
 
+int16_t g_Ax_buff[MAX_ACCEL_AVG_COUNT] = {0};
+int16_t g_Ay_buff[MAX_ACCEL_AVG_COUNT] = {0};
+int16_t g_Az_buff[MAX_ACCEL_AVG_COUNT] = {0};
 
+uint16_t loopCounter    = 0;
 bool g_FirstRun = true;
+
+
 
 fxos_config_t config = {0};
 
+static void Delay(uint32_t ticks){
+	while (ticks--)
+	{
+		__asm("nop");
+	}
+}
 
 status_t Sensor_Init(void){
 
@@ -59,7 +89,110 @@ status_t Sensor_Init(void){
 		}
 	}
 
+	// Get Sensor Scale
+	result = FXOS_ReadReg(&g_fxosHandle, XYZ_DATA_CFG_REG, &g_sensorRange, 1);
+	if (result != kStatus_Success)
+	{
+	}else{
+		if (g_sensorRange == 0x00)
+		{
+			g_dataScale = 2U;
+		}
+		else if (g_sensorRange == 0x01)
+		{
+			g_dataScale = 4U;
+		}
+		else if (g_sensorRange == 0x10)
+		{
+			g_dataScale = 8U;
+		}else{
+			g_dataScale = 0U;
+			result = kStatus_Fail;
+		}
+	}
+
+
+
 	return result;
+}
+
+#define CALIBRATION_ROUNDS 25000
+status_t Sensor_Calibrate(uint32_t *arg)
+{
+    int16_t Mx_max = 0;
+    int16_t My_max = 0;
+    int16_t Mz_max = 0;
+    int16_t Mx_min = 0;
+    int16_t My_min = 0;
+    int16_t Mz_min = 0;
+
+    uint32_t times = 0;
+    PRINTF("\r\nCalibrating magnetometer...\r\n");
+    while (times < CALIBRATION_ROUNDS)
+    {
+        Sensor_ReadRawData(&g_Ax_Raw, &g_Ay_Raw, &g_Az_Raw, &g_Mx_Raw, &g_My_Raw, &g_Mz_Raw);
+        if (times == 0)
+        {
+            Mx_max = Mx_min = g_Mx_Raw;
+            My_max = My_min = g_My_Raw;
+            Mz_max = Mz_min = g_Mz_Raw;
+        }
+        if (g_Mx_Raw > Mx_max)
+        {
+            Mx_max = g_Mx_Raw;
+        }
+        if (g_My_Raw > My_max)
+        {
+            My_max = g_My_Raw;
+        }
+        if (g_Mz_Raw > Mz_max)
+        {
+            Mz_max = g_Mz_Raw;
+        }
+        if (g_Mx_Raw < Mx_min)
+        {
+            Mx_min = g_Mx_Raw;
+        }
+        if (g_My_Raw < My_min)
+        {
+            My_min = g_My_Raw;
+        }
+        if (g_Mz_Raw < Mz_min)
+        {
+            Mz_min = g_Mz_Raw;
+        }
+        *arg = times;
+        if (times == CALIBRATION_ROUNDS - 1)
+        {
+            if ((Mx_max > (Mx_min + 500)) && (My_max > (My_min + 100)) && (Mz_max > (Mz_min + 500)))
+            {
+                g_Mx_Offset = (Mx_max + Mx_min) / 2;
+                g_My_Offset = (My_max + My_min) / 2;
+                g_Mz_Offset = (Mz_max + Mz_min) / 2;
+                PRINTF("\r\nCalibrate magnetometer successfully!");
+                PRINTF("\r\nMagnetometer offset Mx: %d - My: %d - Mz: %d \r\n", g_Mx_Offset, g_My_Offset, g_Mz_Offset);
+                return kStatus_Success;
+            }
+            else
+            {
+                PRINTF("Calibrating magnetometer failed! Press any key to continue...\r\n");
+                GETCHAR();
+                return kStatus_Fail;
+            }
+        }
+        times++;
+        Delay(3000);
+    }
+}
+
+
+// Default Offset values, used when calibration is not convenient
+// Pretty bad tho
+void Sensor_UseDefaultOffsets(void){
+	g_Mx_Offset = 400;
+	g_My_Offset = -10;
+	g_Mz_Offset = 400;
+
 }
 
 void Sensor_ReadRawData(int16_t *Ax, int16_t *Ay, int16_t *Az, int16_t *Mx, int16_t *My, int16_t *Mz)
@@ -82,43 +215,23 @@ void Sensor_ReadRawData(int16_t *Ax, int16_t *Ay, int16_t *Az, int16_t *Mx, int1
 	*Mz = (int16_t)((uint16_t)((uint16_t)fxos_data.magZMSB << 8) | (uint16_t)fxos_data.magZLSB);
 }
 
-void Sensor_ReadFormatedData(void){
+double Sensor_ReadFormatedData(void){
 
-	uint16_t g_Ax_Raw        = 0;
-	uint16_t g_Ay_Raw        = 0;
-	uint16_t g_Az_Raw        = 0;
-	double g_Ax            = 0;
-	double g_Ay            = 0;
-	double g_Az            = 0;
-	uint16_t g_Mx_Raw        = 0;
-	uint16_t g_My_Raw        = 0;
-	uint16_t g_Mz_Raw        = 0;
-	double g_Mx            = 0;
-	double g_My            = 0;
-	double g_Mz            = 0;
-
-	double sinAngle         = 0;
-	double cosAngle         = 0;
-	double Bx               = 0;
-	double By               = 0;
-
-	double g_Mx_LP = 0;
-	double g_My_LP = 0;
-	double g_Mz_LP = 0;
+	g_Ax_Raw        = 0;
+	g_Ay_Raw        = 0;
+	g_Az_Raw        = 0;
+	g_Ax            = 0;
+	g_Ay            = 0;
+	g_Az            = 0;
+	g_Mx_Raw        = 0;
+	g_My_Raw        = 0;
+	g_Mz_Raw        = 0;
+	g_Mx            = 0;
+	g_My            = 0;
+	g_Mz            = 0;
 
 
-	double g_Yaw    = 0;
-	double g_Yaw_LP = 0;
-	double g_Pitch  = 0;
-	double g_Roll   = 0;
-
-	int16_t g_Ax_buff[MAX_ACCEL_AVG_COUNT] = {0};
-	int16_t g_Ay_buff[MAX_ACCEL_AVG_COUNT] = {0};
-	int16_t g_Az_buff[MAX_ACCEL_AVG_COUNT] = {0};
-
-	uint16_t loopCounter    = 0;
-
-	while(loopCounter < 10){
+	while(true){
 		/* Read sensor data */
 		Sensor_ReadRawData(&g_Ax_Raw, &g_Ay_Raw, &g_Az_Raw, &g_Mx_Raw, &g_My_Raw, &g_Mz_Raw);
 
@@ -189,9 +302,12 @@ void Sensor_ReadFormatedData(void){
 
 		g_Yaw_LP += (g_Yaw - g_Yaw_LP) * 0.01;
 
-		loopCounter++;
+		if (++loopCounter > 10)
+		{
+			PRINTF("\r\nCompass Angle: %3.1lf", g_Yaw_LP);
+			return g_Yaw_LP;
+		}
 	}
-	PRINTF("Compass Angle: %3.1lf\r\n", g_Yaw_LP);
 }
 
 
