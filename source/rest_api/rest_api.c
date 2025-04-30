@@ -53,7 +53,7 @@ char *get_byte_buffer(size_t *size_out, char api) {
     }
     if(api == 1){
     	// Ecompass API
-    	snprintf(payload, sizeof(payload), "{\"data\":\"%f\"}", Sensor_ReadFormatedData());
+    	snprintf(payload, sizeof(payload), "{\"data\":\"%f\"}", getCompassAngle());
     }
 
     size_t payload_len = strlen(payload);

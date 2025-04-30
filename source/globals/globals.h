@@ -11,9 +11,11 @@
 #include <stdint.h>
 
 extern volatile uint32_t num_of_presses;
-
+extern volatile double compass_angle;
 
 uint32_t getNumOfPresses();
 void increaseNumOfPresses();
+
+double getCompassAngle();
 
 #endif /* GLOBALS_H_ */

@@ -112,6 +112,7 @@ void print_dhcp_state(struct netif *netif)
 
 		if (dhcp_last_state == DHCP_STATE_BOUND)
 		{
+
 			PRINTF("\r\n IPv4 Address     : %s\r\n", ipaddr_ntoa(&netif->ip_addr));
 			PRINTF(" IPv4 Subnet mask : %s\r\n", ipaddr_ntoa(&netif->netmask));
 			PRINTF(" IPv4 Gateway     : %s\r\n\r\n", ipaddr_ntoa(&netif->gw));

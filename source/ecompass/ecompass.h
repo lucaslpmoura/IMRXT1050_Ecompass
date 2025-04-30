@@ -12,6 +12,7 @@
 #include <math.h>
 #include "fsl_fxos.h"
 #include "board.h"
+#include "globals/globals.h"
 
 #include "fsl_debug_console.h"
 
@@ -23,10 +24,10 @@
 
 
 status_t Sensor_Init(void);
-status_t Sensor_Calibrate(uint32_t *arg);
+status_t Sensor_Calibrate();
 void Sensor_UseDefaultOffsets(void);
 void Sensor_ReadRawData(int16_t *Ax, int16_t *Ay, int16_t *Az, int16_t *Mx, int16_t *My, int16_t *Mz);
-double Sensor_ReadFormatedData();
+void Sensor_TakeSample();
 
 
 

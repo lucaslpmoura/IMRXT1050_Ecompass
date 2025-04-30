@@ -117,7 +117,7 @@ status_t Sensor_Init(void){
 }
 
 #define CALIBRATION_ROUNDS 25000
-status_t Sensor_Calibrate(uint32_t *arg)
+status_t Sensor_Calibrate()
 {
     int16_t Mx_max = 0;
     int16_t My_max = 0;
@@ -161,7 +161,6 @@ status_t Sensor_Calibrate(uint32_t *arg)
         {
             Mz_min = g_Mz_Raw;
         }
-        *arg = times;
         if (times == CALIBRATION_ROUNDS - 1)
         {
             if ((Mx_max > (Mx_min + 500)) && (My_max > (My_min + 100)) && (Mz_max > (Mz_min + 500)))
@@ -189,9 +188,9 @@ status_t Sensor_Calibrate(uint32_t *arg)
 // Default Offset values, used when calibration is not convenient
 // Pretty bad tho
 void Sensor_UseDefaultOffsets(void){
-	g_Mx_Offset = 400;
-	g_My_Offset = -10;
-	g_Mz_Offset = 400;
+	g_Mx_Offset = 492;
+	g_My_Offset = 39;
+	g_Mz_Offset = 463;
 
 }
 
@@ -202,6 +201,7 @@ void Sensor_ReadRawData(int16_t *Ax, int16_t *Ay, int16_t *Az, int16_t *Mx, int1
 	if (FXOS_ReadSensorData(&g_fxosHandle, &fxos_data) != kStatus_Success)
 	{
 		PRINTF("Failed to read acceleration data!\r\n");
+		return;
 	}
 	/* Get the accel data from the sensor data structure in 14 bit left format data*/
 	*Ax = (int16_t)((uint16_t)((uint16_t)fxos_data.accelXMSB << 8) | (uint16_t)fxos_data.accelXLSB) / 4U;
@@ -215,7 +215,7 @@ void Sensor_ReadRawData(int16_t *Ax, int16_t *Ay, int16_t *Az, int16_t *Mx, int1
 	*Mz = (int16_t)((uint16_t)((uint16_t)fxos_data.magZMSB << 8) | (uint16_t)fxos_data.magZLSB);
 }
 
-double Sensor_ReadFormatedData(void){
+void Sensor_TakeSample(void){
 
 	g_Ax_Raw        = 0;
 	g_Ay_Raw        = 0;
@@ -304,8 +304,9 @@ double Sensor_ReadFormatedData(void){
 
 		if (++loopCounter > 10)
 		{
-			PRINTF("\r\nCompass Angle: %3.1lf", g_Yaw_LP);
-			return g_Yaw_LP;
+			//PRINTF("\r\nCompass Angle: %3.1lf\r\n", g_Yaw_LP);
+			compass_angle =  g_Yaw_LP;
+			return;
 		}
 	}
 }
