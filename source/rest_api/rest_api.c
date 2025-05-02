@@ -46,14 +46,18 @@ char *get_byte_buffer(size_t *size_out, char api) {
     offset += http_header_len;
 
     // Payload
-    char payload[64];
+    char payload[128];
     if(api == 0){
     	// Button API
     	snprintf(payload, sizeof(payload), "{\"data\":\"%d\"}", getNumOfPresses());
     }
     if(api == 1){
     	// Ecompass API
-    	snprintf(payload, sizeof(payload), "{\"data\":\"%f\"}", getCompassAngle());
+    	double yaw, pitch, roll = 0.0;
+    	getCompassYawPitchRoll(&yaw, &pitch, &roll);
+    	snprintf(payload, sizeof(payload),
+    			"{\"data\": {\"yaw\": \"%f\", \"pitch\": \"%f\", \"roll\": \"%f\"}}", yaw, pitch, roll);
+
     }
 
     size_t payload_len = strlen(payload);

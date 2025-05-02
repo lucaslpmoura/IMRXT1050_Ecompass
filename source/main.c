@@ -80,7 +80,11 @@ void Button_OnPressed(){
 	GPIO_PortClearInterruptFlags(SW8_GPIO, 1U << SW8_GPIO_PIN);
 	increaseNumOfPresses();
 	PRINTF("Button Pressed %d times\r\n", getNumOfPresses());
-	PRINTF("\r\nCompass Angle: %3.1lf\r\n", getCompassAngle());
+	double yaw, pitch, roll = 0.0;
+	getCompassYawPitchRoll(&yaw, &pitch, &roll);
+	PRINTF("Yaw: %3.1lf\r\n", yaw);
+	PRINTF("Pitch: %3.1lf\r\n", pitch);
+	PRINTF("Roll: %3.1lf\r\n", roll);
 	__DSB();
 }
 
@@ -153,6 +157,10 @@ int main(void)
 
     while (ethernetif_wait_linkup(&netif, 2000) != ERR_OK)
     {
+    	if(mag_enable){
+    	        	mag_counter = 0;
+    	            Sensor_TakeSample();
+    	        }
         PRINTF("PHY Auto-negotiation failed. Please check the cable connection and link partner setting.\r\n");
 
     }

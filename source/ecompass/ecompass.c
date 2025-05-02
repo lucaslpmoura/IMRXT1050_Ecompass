@@ -46,7 +46,9 @@ double g_Mz_LP = 0;
 double g_Yaw    = 0;
 double g_Yaw_LP = 0;
 double g_Pitch  = 0;
+double g_Pitch_LP = 0;
 double g_Roll   = 0;
+double g_Roll_LP = 0;
 
 int16_t g_Ax_buff[MAX_ACCEL_AVG_COUNT] = {0};
 int16_t g_Ay_buff[MAX_ACCEL_AVG_COUNT] = {0};
@@ -285,7 +287,7 @@ void Sensor_TakeSample(void){
 		g_Az = g_Ay * sinAngle + g_Az * cosAngle;
 
 		/* Calculate pitch angle g_Pitch (-90deg, 90deg) and sin, cos*/
-		g_Pitch  = atan2(-g_Ax, g_Az) * RadToDeg;
+		g_Pitch = atan2(-g_Ax, sqrt(g_Ay * g_Ay + g_Az * g_Az)) * RadToDeg;
 		sinAngle = sin(g_Pitch * DegToRad);
 		cosAngle = cos(g_Pitch * DegToRad);
 
@@ -297,15 +299,21 @@ void Sensor_TakeSample(void){
 		if (g_FirstRun)
 		{
 			g_Yaw_LP   = g_Yaw;
+			g_Pitch_LP = g_Pitch;
+			g_Roll_LP = g_Roll;
 			g_FirstRun = false;
 		}
 
-		g_Yaw_LP += (g_Yaw - g_Yaw_LP) * 0.01;
+		g_Yaw_LP += (g_Yaw - g_Yaw_LP) * 0.05;
+		g_Pitch_LP += (g_Pitch - g_Pitch_LP) * 0.05;
+		g_Roll_LP += (g_Roll - g_Roll_LP) * 0.05;
 
 		if (++loopCounter > 10)
 		{
 			//PRINTF("\r\nCompass Angle: %3.1lf\r\n", g_Yaw_LP);
-			compass_angle =  g_Yaw_LP;
+			compass_yaw =  g_Yaw_LP;
+			compass_pitch = g_Pitch_LP;
+			compass_roll = g_Roll_LP;
 			return;
 		}
 	}

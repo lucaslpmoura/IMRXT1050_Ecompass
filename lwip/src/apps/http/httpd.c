@@ -548,7 +548,7 @@
      http_state_eof(hs);
      http_remove_connection(hs);
      if(hs->original_file != NULL && hs->is_dynamic){
-         PRINTF("File: %p\r\n", hs->original_file);
+         //PRINTF("File: %p\r\n", hs->original_file);
          mem_free(hs->original_file);
 
      }
@@ -2271,7 +2271,7 @@
          file_name = httpd_default_filenames[loop].name;
        }
        LWIP_DEBUGF(HTTPD_DEBUG | LWIP_DBG_TRACE, ("Looking for %s...\n", file_name));
-       PRINTF("%s\r\n", file_name);
+       //PRINTF("%s\r\n", file_name);
        err = fs_open(&hs->file_handle, file_name);
        if (err == ERR_OK) {
          uri = file_name;
@@ -2384,12 +2384,12 @@
  http_handle_api_call(struct http_state *hs, const char *uri, int is_09){
 	 char api  = 0;
      if(strcmp(uri, "/api/button/") == 0){
-         PRINTF("Button api called.\r\n");
+         //PRINTF("Button api called.\r\n");
          api = 0;
      }
 
      if(strcmp(uri, "/api/ecompass/") == 0){
-    	 PRINTF("Ecompass api called.\r\n");
+    	 //PRINTF("Ecompass api called.\r\n");
     	 api = 1;
      }
 
@@ -2399,7 +2399,7 @@
      if (buffer != NULL) {
     	 hs->original_file = buffer;
     	 hs->file = hs->original_file;
-    	 PRINTF("Original file: %p\r\n", hs->file);
+    	 //PRINTF("Original file: %p\r\n", hs->file);
     	 hs->handle = (struct fs_file*) NULL;
     	 hs->left = buf_len;
     	 hs->is_dynamic = true;

@@ -1,6 +1,6 @@
-../source/ecompass/ecompass.c:62:13:Delay	16	static
-../source/ecompass/ecompass.c:69:10:Sensor_Init	16	static
-../source/ecompass/ecompass.c:120:10:Sensor_Calibrate	32	static
-../source/ecompass/ecompass.c:190:6:Sensor_UseDefaultOffsets	4	static
-../source/ecompass/ecompass.c:197:6:Sensor_ReadRawData	40	static
-../source/ecompass/ecompass.c:218:6:Sensor_TakeSample	24	static
+../source/ecompass/ecompass.c:64:13:Delay	16	static
+../source/ecompass/ecompass.c:71:10:Sensor_Init	16	static
+../source/ecompass/ecompass.c:122:10:Sensor_Calibrate	32	static
+../source/ecompass/ecompass.c:192:6:Sensor_UseDefaultOffsets	4	static
+../source/ecompass/ecompass.c:199:6:Sensor_ReadRawData	40	static
+../source/ecompass/ecompass.c:220:6:Sensor_TakeSample	32	static
