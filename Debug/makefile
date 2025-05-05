@@ -29,6 +29,11 @@ RM := rm -rf
 -include lwip/src/api/subdir.mk
 -include lwip/port/sys_arch/dynamic/subdir.mk
 -include lwip/port/subdir.mk
+-include lwip/contrib/apps/udpecho_raw/subdir.mk
+-include lwip/contrib/apps/udpecho/subdir.mk
+-include lwip/contrib/apps/tcpecho_raw/subdir.mk
+-include lwip/contrib/apps/tcpecho/subdir.mk
+-include lwip/contrib/apps/ping/subdir.mk
 -include drivers/subdir.mk
 -include device/subdir.mk
 -include component/uart/subdir.mk

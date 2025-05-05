@@ -22,6 +22,11 @@ component/silicon_id \
 component/uart \
 device \
 drivers \
+lwip/contrib/apps/ping \
+lwip/contrib/apps/tcpecho \
+lwip/contrib/apps/tcpecho_raw \
+lwip/contrib/apps/udpecho \
+lwip/contrib/apps/udpecho_raw \
 lwip/port \
 lwip/port/sys_arch/dynamic \
 lwip/src/api \
