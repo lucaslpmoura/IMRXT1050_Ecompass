@@ -1,10 +1,10 @@
-C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\CMSIS/m-profile/armv7m_mpu.h:189:22:ARM_MPU_Enable	16	static
-C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\CMSIS/m-profile/armv7m_mpu.h:202:22:ARM_MPU_Disable	4	static
-C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_clock.h:1377:20:CLOCK_SetMux	24	static
-C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_clock.h:1403:24:CLOCK_GetMux	16	static
-C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_clock.h:1429:20:CLOCK_SetDiv	24	static
-C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_clock.h:1454:24:CLOCK_GetDiv	16	static
-C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\evkbimxrt1050_tst_lwip_dhcp_bm\drivers/fsl_clock.h:1515:24:CLOCK_GetOscFreq	4	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\IMRXT1050_Ecompass\CMSIS/m-profile/armv7m_mpu.h:189:22:ARM_MPU_Enable	16	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\IMRXT1050_Ecompass\CMSIS/m-profile/armv7m_mpu.h:202:22:ARM_MPU_Disable	4	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\IMRXT1050_Ecompass\drivers/fsl_clock.h:1377:20:CLOCK_SetMux	24	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\IMRXT1050_Ecompass\drivers/fsl_clock.h:1403:24:CLOCK_GetMux	16	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\IMRXT1050_Ecompass\drivers/fsl_clock.h:1429:20:CLOCK_SetDiv	24	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\IMRXT1050_Ecompass\drivers/fsl_clock.h:1454:24:CLOCK_GetDiv	16	static
+C:\Users\xlouzal00\Documents\MCUXpressoIDE_24.12.148\workspace\IMRXT1050_Ecompass\drivers/fsl_clock.h:1515:24:CLOCK_GetOscFreq	4	static
 ../board/board.c:24:10:BOARD_DebugConsoleSrcFreq	24	static
 ../board/board.c:43:6:BOARD_InitDebugConsole	16	static
 ../board/board.c:51:6:BOARD_LPI2C_Init	48	static

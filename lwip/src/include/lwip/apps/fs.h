@@ -136,4 +136,8 @@ int fs_read_custom(struct fs_file *file, char *buffer, int count);
 }
 #endif
 
+extern const struct fsdata_file file__index_html[];
+#define FS_ROOT file__index_html
+
+
 #endif /* LWIP_HDR_APPS_FS_H */

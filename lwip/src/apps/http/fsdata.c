@@ -1122,6 +1122,7 @@ static const unsigned char FSDATA_ALIGN_PRE data__ecompass_html[] FSDATA_ALIGN_P
 
 };
 
+
 struct fsdata_file file__ecompass_html[] = {{
 		file_NULL,
 		data__ecompass_html,
@@ -1129,6 +1130,7 @@ struct fsdata_file file__ecompass_html[] = {{
 		sizeof(data__ecompass_html) - 25,
 		FS_FILE_FLAGS_HEADER_INCLUDED | FS_FILE_FLAGS_HEADER_PERSISTENT,
 }};
+
 
 struct fsdata_file file__button_page_html[] = {{
 		file__ecompass_html,
@@ -1163,5 +1165,6 @@ const struct fsdata_file file__index_html[] = { {
 		FS_FILE_FLAGS_HEADER_INCLUDED | FS_FILE_FLAGS_HEADER_PERSISTENT,
 }};
 
-#define FS_ROOT file__index_html
+
 #define FS_NUMFILES 5
+

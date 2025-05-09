@@ -56,7 +56,7 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := evkbimxrt1050_tst_lwip_dhcp_bm
+BUILD_ARTIFACT_NAME := IMRXT1050_Ecompass
 BUILD_ARTIFACT_EXTENSION := axf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
@@ -68,24 +68,24 @@ all:
 	+@$(MAKE) --no-print-directory main-build && $(MAKE) --no-print-directory post-build
 
 # Main-build Target
-main-build: evkbimxrt1050_tst_lwip_dhcp_bm.axf
+main-build: IMRXT1050_Ecompass.axf
 
 # Tool invocations
-evkbimxrt1050_tst_lwip_dhcp_bm.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
+IMRXT1050_Ecompass.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -Xlinker -no-warn-rwx-segments -Xlinker -Map="evkbimxrt1050_tst_lwip_dhcp_bm.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -T evkbimxrt1050_tst_lwip_dhcp_bm_Debug.ld -o "evkbimxrt1050_tst_lwip_dhcp_bm.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -Xlinker -no-warn-rwx-segments -Xlinker -Map="IMRXT1050_Ecompass.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -T IMRXT1050_Ecompass_Debug.ld -o "IMRXT1050_Ecompass.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) evkbimxrt1050_tst_lwip_dhcp_bm.axf
+	-$(RM) IMRXT1050_Ecompass.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "evkbimxrt1050_tst_lwip_dhcp_bm.axf"; # arm-none-eabi-objcopy -v -O binary "evkbimxrt1050_tst_lwip_dhcp_bm.axf" "evkbimxrt1050_tst_lwip_dhcp_bm.bin" ; # checksum -p MIMXRT1052xxxxB -d "evkbimxrt1050_tst_lwip_dhcp_bm.bin";
+	-arm-none-eabi-size "IMRXT1050_Ecompass.axf"; # arm-none-eabi-objcopy -v -O binary "IMRXT1050_Ecompass.axf" "IMRXT1050_Ecompass.bin" ; # checksum -p MIMXRT1052xxxxB -d "IMRXT1050_Ecompass.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents main-build post-build

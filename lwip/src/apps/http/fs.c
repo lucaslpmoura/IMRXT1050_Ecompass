@@ -38,7 +38,7 @@
 #include "fsl_debug_console.h"
 
 
-#include HTTPD_FSDATA_FILE
+//#include HTTPD_FSDATA_FILE
 
 /*-----------------------------------------------------------------------------------*/
 err_t
