@@ -32,3 +32,4 @@ The following endpoints, alongside the LWIP defaults, are avaiable at the web se
 ## Documentation ## 
 
 For further documentation on the board or on how to configure the IDE please refer to [this repository](https://github.com/lucaslpmoura/IMXRT1050-EVKB).
+The supporting files cited on the paper, including experimental samples and scritps, can be found on the [support_files](https://github.com/lucaslpmoura/IMRXT1050_Ecompass/tree/main/support_files) directory.
