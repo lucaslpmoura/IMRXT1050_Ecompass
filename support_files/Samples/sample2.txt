@@ -1,0 +1,2023 @@
+
+HTTP Response
+ 40272
+
+
+HTTP Response
+ 45788
+
+
+HTTP Response
+ 40882
+
+
+HTTP Response
+ 41888
+
+
+HTTP Response
+ 48820
+
+
+HTTP Response
+ 46672
+
+
+HTTP Response
+ 38860
+
+
+HTTP Response
+ 38296
+
+
+HTTP Response
+ 35256
+
+
+HTTP Response
+ 39648
+
+
+HTTP Response
+ 48200
+
+
+HTTP Response
+ 49669
+
+
+HTTP Response
+ 39340
+
+
+HTTP Response
+ 36502
+
+
+HTTP Response
+ 47436
+
+
+HTTP Response
+ 48444
+
+
+HTTP Response
+ 46161
+
+
+HTTP Response
+ 39480
+
+
+HTTP Response
+ 39292
+
+
+HTTP Response
+ 45916
+
+
+HTTP Response
+ 44588
+
+
+HTTP Response
+ 43336
+
+
+HTTP Response
+ 38272
+
+
+HTTP Response
+ 41492
+
+
+HTTP Response
+ 41164
+
+
+HTTP Response
+ 43288
+
+
+HTTP Response
+ 46404
+
+
+HTTP Response
+ 43428
+
+
+HTTP Response
+ 43188
+
+
+HTTP Response
+ 35192
+
+
+HTTP Response
+ 41188
+
+
+HTTP Response
+ 43041
+
+
+HTTP Response
+ 48868
+
+
+HTTP Response
+ 44007
+
+
+HTTP Response
+ 37468
+
+
+HTTP Response
+ 35468
+
+
+HTTP Response
+ 43916
+
+
+HTTP Response
+ 46164
+
+
+HTTP Response
+ 46076
+
+
+HTTP Response
+ 40276
+
+
+HTTP Response
+ 36036
+
+
+HTTP Response
+ 38784
+
+
+HTTP Response
+ 45856
+
+
+HTTP Response
+ 47360
+
+
+HTTP Response
+ 35195
+
+
+HTTP Response
+ 37514
+
+
+HTTP Response
+ 44393
+
+
+HTTP Response
+ 45884
+
+
+HTTP Response
+ 35889
+
+
+HTTP Response
+ 45588
+
+
+HTTP Response
+ 38428
+
+
+HTTP Response
+ 46033
+
+
+HTTP Response
+ 42392
+
+
+HTTP Response
+ 37612
+
+
+HTTP Response
+ 36156
+
+
+HTTP Response
+ 42228
+
+
+FXOS Read Operation
+ 197638
+
+
+HTTP Response
+ 49085
+
+
+HTTP Response
+ 42712
+
+
+HTTP Response
+ 38776
+
+
+HTTP Response
+ 36472
+
+
+HTTP Response
+ 45197
+
+
+HTTP Response
+ 45012
+
+
+HTTP Response
+ 43332
+
+
+HTTP Response
+ 37836
+
+
+HTTP Response
+ 36772
+
+
+HTTP Response
+ 40896
+
+
+HTTP Response
+ 42849
+
+
+FXOS Read Operation
+ 199156
+
+
+HTTP Response
+ 46333
+
+
+HTTP Response
+ 39436
+
+
+HTTP Response
+ 40040
+
+
+HTTP Response
+ 48160
+
+
+HTTP Response
+ 50524
+
+
+HTTP Response
+ 46606
+
+
+HTTP Response
+ 37452
+
+
+HTTP Response
+ 40384
+
+
+HTTP Response
+ 41181
+
+
+HTTP Response
+ 47024
+
+
+HTTP Response
+ 46804
+
+
+HTTP Response
+ 37868
+
+
+HTTP Response
+ 46244
+
+
+HTTP Response
+ 36736
+
+
+HTTP Response
+ 47124
+
+
+HTTP Response
+ 36976
+
+
+HTTP Response
+ 44561
+
+
+HTTP Response
+ 46668
+
+
+HTTP Response
+ 39597
+
+
+HTTP Response
+ 41897
+
+
+HTTP Response
+ 40544
+
+
+HTTP Response
+ 44208
+
+
+HTTP Response
+ 44984
+
+
+FXOS Read Operation
+ 197545
+
+
+HTTP Response
+ 45886
+
+
+HTTP Response
+ 38140
+
+
+HTTP Response
+ 47573
+
+
+HTTP Response
+ 42216
+
+
+HTTP Response
+ 42108
+
+
+HTTP Response
+ 46356
+
+
+HTTP Response
+ 37353
+
+
+HTTP Response
+ 46104
+
+
+HTTP Response
+ 40852
+
+
+HTTP Response
+ 44717
+
+
+HTTP Response
+ 41538
+
+
+HTTP Response
+ 44862
+
+
+HTTP Response
+ 45248
+
+
+HTTP Response
+ 43216
+
+
+HTTP Response
+ 41245
+
+
+HTTP Response
+ 44756
+
+
+HTTP Response
+ 45072
+
+
+HTTP Response
+ 48848
+
+
+HTTP Response
+ 47408
+
+
+HTTP Response
+ 44436
+
+
+HTTP Response
+ 36924
+
+
+HTTP Response
+ 43692
+
+
+HTTP Response
+ 47968
+
+
+HTTP Response
+ 46704
+
+
+HTTP Response
+ 42544
+
+
+HTTP Response
+ 36748
+
+
+HTTP Response
+ 34946
+
+
+HTTP Response
+ 33972
+
+
+FXOS Read Operation
+ 198523
+
+
+HTTP Response
+ 46360
+
+
+HTTP Response
+ 37284
+
+
+HTTP Response
+ 39221
+
+
+HTTP Response
+ 37824
+
+
+HTTP Response
+ 36216
+
+
+FXOS Read Operation
+ 199619
+
+
+HTTP Response
+ 50268
+
+
+HTTP Response
+ 42192
+
+
+HTTP Response
+ 38764
+
+
+HTTP Response
+ 34740
+
+
+HTTP Response
+ 33656
+
+
+HTTP Response
+ 39868
+
+
+FXOS Read Operation
+ 197937
+
+
+HTTP Response
+ 47292
+
+
+HTTP Response
+ 39630
+
+
+HTTP Response
+ 37404
+
+
+HTTP Response
+ 37092
+
+
+HTTP Response
+ 42500
+
+
+HTTP Response
+ 45617
+
+
+HTTP Response
+ 49624
+
+
+HTTP Response
+ 38500
+
+
+HTTP Response
+ 37604
+
+
+HTTP Response
+ 47808
+
+
+HTTP Response
+ 47992
+
+
+HTTP Response
+ 44792
+
+
+HTTP Response
+ 37824
+
+
+HTTP Response
+ 34744
+
+
+HTTP Response
+ 39924
+
+
+HTTP Response
+ 47601
+
+
+HTTP Response
+ 46028
+
+
+HTTP Response
+ 38157
+
+
+HTTP Response
+ 38060
+
+
+HTTP Response
+ 44892
+
+
+HTTP Response
+ 46876
+
+
+HTTP Response
+ 45468
+
+
+HTTP Response
+ 41320
+
+
+HTTP Response
+ 41673
+
+
+HTTP Response
+ 43608
+
+
+HTTP Response
+ 48176
+
+
+HTTP Response
+ 43064
+
+
+HTTP Response
+ 40568
+
+
+HTTP Response
+ 48030
+
+
+HTTP Response
+ 36364
+
+
+HTTP Response
+ 49814
+
+
+HTTP Response
+ 46273
+
+
+HTTP Response
+ 40069
+
+
+HTTP Response
+ 37340
+
+
+HTTP Response
+ 43392
+
+
+HTTP Response
+ 49112
+
+
+HTTP Response
+ 47672
+
+
+HTTP Response
+ 37345
+
+
+HTTP Response
+ 44196
+
+
+HTTP Response
+ 44720
+
+
+HTTP Response
+ 43992
+
+
+HTTP Response
+ 45504
+
+
+HTTP Response
+ 37952
+
+
+HTTP Response
+ 42984
+
+
+HTTP Response
+ 36356
+
+
+HTTP Response
+ 47672
+
+
+HTTP Response
+ 50616
+
+
+HTTP Response
+ 44961
+
+
+HTTP Response
+ 44528
+
+
+HTTP Response
+ 40173
+
+
+HTTP Response
+ 44412
+
+
+HTTP Response
+ 42488
+
+
+HTTP Response
+ 43820
+
+
+HTTP Response
+ 45192
+
+
+HTTP Response
+ 45024
+
+
+HTTP Response
+ 46412
+
+
+HTTP Response
+ 43856
+
+
+HTTP Response
+ 42312
+
+
+HTTP Response
+ 47712
+
+
+HTTP Response
+ 43512
+
+
+HTTP Response
+ 48216
+
+
+HTTP Response
+ 47356
+
+
+HTTP Response
+ 38516
+
+
+HTTP Response
+ 43684
+
+
+HTTP Response
+ 36480
+
+
+HTTP Response
+ 45144
+
+
+HTTP Response
+ 48680
+
+
+HTTP Response
+ 37592
+
+
+HTTP Response
+ 44212
+
+
+HTTP Response
+ 42836
+
+
+HTTP Response
+ 46328
+
+
+HTTP Response
+ 43165
+
+
+HTTP Response
+ 37092
+
+
+HTTP Response
+ 47148
+
+
+HTTP Response
+ 48209
+
+
+HTTP Response
+ 35100
+
+
+HTTP Response
+ 45852
+
+
+HTTP Response
+ 37000
+
+
+HTTP Response
+ 44928
+
+
+HTTP Response
+ 43321
+
+
+HTTP Response
+ 36596
+
+
+HTTP Response
+ 40917
+
+
+HTTP Response
+ 40510
+
+
+HTTP Response
+ 45908
+
+
+HTTP Response
+ 40048
+
+
+HTTP Response
+ 47196
+
+
+HTTP Response
+ 40572
+
+
+HTTP Response
+ 39656
+
+
+HTTP Response
+ 39584
+
+
+HTTP Response
+ 44866
+
+
+HTTP Response
+ 47368
+
+
+HTTP Response
+ 40296
+
+
+HTTP Response
+ 44901
+
+
+HTTP Response
+ 44324
+
+
+HTTP Response
+ 44324
+
+
+HTTP Response
+ 44768
+
+
+HTTP Response
+ 44233
+
+
+HTTP Response
+ 49168
+
+
+HTTP Response
+ 43664
+
+
+HTTP Response
+ 47044
+
+
+HTTP Response
+ 46720
+
+
+HTTP Response
+ 45552
+
+
+HTTP Response
+ 42081
+
+
+HTTP Response
+ 44600
+
+
+HTTP Response
+ 43249
+
+
+HTTP Response
+ 41044
+
+
+HTTP Response
+ 42856
+
+
+HTTP Response
+ 49319
+
+
+HTTP Response
+ 40445
+
+
+HTTP Response
+ 46117
+
+
+HTTP Response
+ 43484
+
+
+HTTP Response
+ 44172
+
+
+HTTP Response
+ 48140
+
+
+HTTP Response
+ 42572
+
+
+HTTP Response
+ 46500
+
+
+HTTP Response
+ 38556
+
+
+HTTP Response
+ 45336
+
+
+HTTP Response
+ 44434
+
+
+HTTP Response
+ 42424
+
+
+HTTP Response
+ 41656
+
+
+HTTP Response
+ 40896
+
+
+HTTP Response
+ 44736
+
+
+HTTP Response
+ 47469
+
+
+HTTP Response
+ 42732
+
+
+HTTP Response
+ 42764
+
+
+HTTP Response
+ 41112
+
+
+HTTP Response
+ 47308
+
+
+HTTP Response
+ 44331
+
+
+HTTP Response
+ 41113
+
+
+HTTP Response
+ 42828
+
+
+HTTP Response
+ 42288
+
+
+HTTP Response
+ 44532
+
+
+HTTP Response
+ 42244
+
+
+HTTP Response
+ 42549
+
+
+HTTP Response
+ 43948
+
+
+HTTP Response
+ 47217
+
+
+HTTP Response
+ 38572
+
+
+HTTP Response
+ 38565
+
+
+HTTP Response
+ 45885
+
+
+HTTP Response
+ 50356
+
+
+HTTP Response
+ 47577
+
+
+HTTP Response
+ 46852
+
+
+HTTP Response
+ 42848
+
+
+HTTP Response
+ 50709
+
+
+HTTP Response
+ 35700
+
+
+HTTP Response
+ 45273
+
+
+HTTP Response
+ 42384
+
+
+HTTP Response
+ 38560
+
+
+HTTP Response
+ 38164
+
+
+HTTP Response
+ 47122
+
+
+HTTP Response
+ 48684
+
+
+HTTP Response
+ 44000
+
+
+HTTP Response
+ 44812
+
+
+HTTP Response
+ 38632
+
+
+HTTP Response
+ 44644
+
+
+HTTP Response
+ 40805
+
+
+HTTP Response
+ 47252
+
+
+HTTP Response
+ 46560
+
+
+HTTP Response
+ 43636
+
+
+HTTP Response
+ 45524
+
+
+HTTP Response
+ 46648
+
+
+HTTP Response
+ 44932
+
+
+HTTP Response
+ 43936
+
+
+HTTP Response
+ 48055
+
+
+HTTP Response
+ 47876
+
+
+HTTP Response
+ 43180
+
+
+HTTP Response
+ 45852
+
+
+HTTP Response
+ 47152
+
+
+HTTP Response
+ 45372
+
+
+HTTP Response
+ 47765
+
+
+HTTP Response
+ 47300
+
+
+HTTP Response
+ 45300
+
+
+HTTP Response
+ 44739
+
+
+HTTP Response
+ 46344
+
+
+HTTP Response
+ 46398
+
+
+HTTP Response
+ 43160
+
+
+HTTP Response
+ 44421
+
+
+HTTP Response
+ 47246
+
+
+HTTP Response
+ 42956
+
+
+HTTP Response
+ 42944
+
+
+HTTP Response
+ 45024
+
+
+HTTP Response
+ 50253
+
+
+HTTP Response
+ 44024
+
+
+HTTP Response
+ 38828
+
+
+HTTP Response
+ 43879
+
+
+HTTP Response
+ 39081
+
+
+HTTP Response
+ 48783
+
+
+HTTP Response
+ 47776
+
+
+HTTP Response
+ 42280
+
+
+HTTP Response
+ 49456
+
+
+HTTP Response
+ 39936
+
+
+HTTP Response
+ 39776
+
+
+HTTP Response
+ 46884
+
+
+HTTP Response
+ 43624
+
+
+HTTP Response
+ 46685
+
+
+HTTP Response
+ 35573
+
+
+HTTP Response
+ 39604
+
+
+HTTP Response
+ 44117
+
+
+HTTP Response
+ 43676
+
+
+HTTP Response
+ 47488
+
+
+HTTP Response
+ 41672
+
+
+HTTP Response
+ 46513
+
+
+HTTP Response
+ 41624
+
+
+HTTP Response
+ 45416
+
+
+HTTP Response
+ 45108
+
+
+HTTP Response
+ 45285
+
+
+HTTP Response
+ 43345
+
+
+HTTP Response
+ 42612
+
+
+HTTP Response
+ 36952
+
+
+HTTP Response
+ 44919
+
+
+HTTP Response
+ 49848
+
+
+HTTP Response
+ 46480
+
+
+HTTP Response
+ 38041
+
+
+HTTP Response
+ 41164
+
+
+HTTP Response
+ 41340
+
+
+HTTP Response
+ 45740
+
+
+HTTP Response
+ 45748
+
+
+HTTP Response
+ 37268
+
+
+HTTP Response
+ 38408
+
+
+HTTP Response
+ 43504
+
+
+HTTP Response
+ 47396
+
+
+HTTP Response
+ 48404
+
+
+HTTP Response
+ 40636
+
+
+HTTP Response
+ 38912
+
+
+HTTP Response
+ 44833
+
+
+HTTP Response
+ 47592
+
+
+HTTP Response
+ 45165
+
+
+HTTP Response
+ 35260
+
+
+HTTP Response
+ 39481
+
+
+HTTP Response
+ 45832
+
+
+HTTP Response
+ 50828
+
+
+HTTP Response
+ 48468
+
+
+HTTP Response
+ 41889
+
+
+HTTP Response
+ 45733
+
+
+HTTP Response
+ 39960
+
+
+HTTP Response
+ 42484
+
+
+HTTP Response
+ 46676
+
+
+HTTP Response
+ 47381
+
+
+HTTP Response
+ 47404
+
+
+HTTP Response
+ 38589
+Device MAC Address 54278D8424F8
+Initializing PHY...
+[LINK STATE] netif=0, state=down
+Magnetometer initialized successfully.
+
+FXOS Read Operation
+ 2097942
+
+
+FXOS Read Operation
+ 191069
+
+
+FXOS Read Operation
+ 191000
+
+
+FXOS Read Operation
+ 190101
+
+
+FXOS Read Operation
+ 190667
+
+
+FXOS Read Operation
+ 190891
+
+
+FXOS Read Operation
+ 192081
+
+
+FXOS Read Operation
+ 190839
+
+
+FXOS Read Operation
+ 190998
+
+
+FXOS Read Operation
+ 191070
+
+
+FXOS Read Operation
+ 190647
+
+
+FXOS Read Operation
+ 191850
+
+
+FXOS Read Operation
+ 189896
+
+
+FXOS Read Operation
+ 190941
+
+
+FXOS Read Operation
+ 190714
+
+
+FXOS Read Operation
+ 191055
+
+
+FXOS Read Operation
+ 191240
+
+
+FXOS Read Operation
+ 191605
+
+
+FXOS Read Operation
+ 190704
+
+
+FXOS Read Operation
+ 190870
+
+
+FXOS Read Operation
+ 191059
+
+
+FXOS Read Operation
+ 190353
+
+
+FXOS Read Operation
+ 191517
+
+
+FXOS Read Operation
+ 191887
+
+
+FXOS Read Operation
+ 192323
+
+
+FXOS Read Operation
+ 191197
+
+
+FXOS Read Operation
+ 189706
+
+
+FXOS Read Operation
+ 190442
+
+
+FXOS Read Operation
+ 190209
+
+
+FXOS Read Operation
+ 190696
+
+
+FXOS Read Operation
+ 190265
+
+
+FXOS Read Operation
+ 191245
+
+
+FXOS Read Operation
+ 190963
+
+
+FXOS Read Operation
+ 190819
+
+
+FXOS Read Operation
+ 190670
+
+
+FXOS Read Operation
+ 190000
+
+
+FXOS Read Operation
+ 190709
+
+
+FXOS Read Operation
+ 191437
+
+
+FXOS Read Operation
+ 190639
+
+
+FXOS Read Operation
+ 191504
+
+
+FXOS Read Operation
+ 189692
+
+
+FXOS Read Operation
+ 190141
+
+
+FXOS Read Operation
+ 190015
+
+
+FXOS Read Operation
+ 190409
+
+
+FXOS Read Operation
+ 189972
+
+
+FXOS Read Operation
+ 190790
+
+
+FXOS Read Operation
+ 190859
+
+
+FXOS Read Operation
+ 191114
+
+
+FXOS Read Operation
+ 192405
+
+
+FXOS Read Operation
+ 189877
+
+
+FXOS Read Operation
+ 191471
+
+
+FXOS Read Operation
+ 191300
+
+
+FXOS Read Operation
+ 190459
+
+
+FXOS Read Operation
+ 190634
+
+
+FXOS Read Operation
+ 191307
+
+
+FXOS Read Operation
+ 190683
+
+
+FXOS Read Operation
+ 191351
+
+
+FXOS Read Operation
+ 190564
+
+
+FXOS Read Operation
+ 190800
+
+
+FXOS Read Operation
+ 190496
+
+
+FXOS Read Operation
+ 192304
+
+
+FXOS Read Operation
+ 191054
+
+
+FXOS Read Operation
+ 190166
+
+
+FXOS Read Operation
+ 189798
+
+
+FXOS Read Operation
+ 190802
+
+
+FXOS Read Operation
+ 191485
+
+
+FXOS Read Operation
+ 190987
+
+
+FXOS Read Operation
+ 190626
+
+
+FXOS Read Operation
+ 191521
+
+
+FXOS Read Operation
+ 190740
+
+
+FXOS Read Operation
+ 190298
+
+
+FXOS Read Operation
+ 191121
+
+
+FXOS Read Operation
+ 190637
+
+
+FXOS Read Operation
+ 191011
+
+
+FXOS Read Operation
+ 190447
+
+
+FXOS Read Operation
+ 190861
+
+
+FXOS Read Operation
+ 191195
+
+
+FXOS Read Operation
+ 189794
+
+
+FXOS Read Operation
+ 190793
+
+
+FXOS Read Operation
+ 191364
+
+
+FXOS Read Operation
+ 191042
+
+
+FXOS Read Operation
+ 190928
+
+
+FXOS Read Operation
+ 191149
+
+
+FXOS Read Operation
+ 189926
+
+
+FXOS Read Operation
+ 191044
+
+
+FXOS Read Operation
+ 190786
+
+
+FXOS Read Operation
+ 190043
+
+
+FXOS Read Operation
+ 190214
+
+
+FXOS Read Operation
+ 190595
+
+
+FXOS Read Operation
+ 191834
+
+
+FXOS Read Operation
+ 192428
+
+
+FXOS Read Operation
+ 191582
+
+
+FXOS Read Operation
+ 190079
+
+
+FXOS Read Operation
+ 192027
+
+
+FXOS Read Operation
+ 191205
+
+
+FXOS Read Operation
+ 190827
+
+
+FXOS Read Operation
+ 191221
+
+
+FXOS Read Operation
+ 191713
+
+
+FXOS Read Operation
+ 191486
+
+
+FXOS Read Operation
+ 191149
+
+
+FXOS Read Operation
+ 190520
+
+
+FXOS Read Operation
+ 190569
+
+
+FXOS Read Operation
+ 190741
+
+
+FXOS Read Operation
+ 191186
+
+
+FXOS Read Operation
+ 191383
+
+
+FXOS Read Operation
+ 189991
+
+
+FXOS Read Operation
+ 191451
+
+
+FXOS Read Operation
+ 191675
+
+
+FXOS Read Operation
+ 191894
+
+
+FXOS Read Operation
+ 191013
+
+
+FXOS Read Operation
+ 191408
+
+
+FXOS Read Operation
+ 190460
+
+
+FXOS Read Operation
+ 192424
+
+
+FXOS Read Operation
+ 191029
+
+
+FXOS Read Operation
+ 190812
+
+
+FXOS Read Operation
+ 190503
+
+
+FXOS Read Operation
+ 190654
+
+
+FXOS Read Operation
+ 191582
+
+
+FXOS Read Operation
+ 191178
+
+
+FXOS Read Operation
+ 190749
+
+
+FXOS Read Operation
+ 190265
+
+
+FXOS Read Operation
+ 189988
+
+
+FXOS Read Operation
+ 190686
+
+
+FXOS Read Operation
+ 190511
+
+
+FXOS Read Operation
+ 190547
+
+
+FXOS Read Operation
+ 191172
+
+
+FXOS Read Operation
+ 190847
+
+
+FXOS Read Operation
+ 191800
+
+
+FXOS Read Operation
+ 192092
+
+
+FXOS Read Operation
+ 191209
+

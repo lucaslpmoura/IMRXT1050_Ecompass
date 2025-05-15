@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            display: flex;
+            max-width: auto;
+        }
+
+        .clock{
+            display: grid;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        
+
+        .clock-canvas{
+            background-color: #333;
+        }
+
+        .clock-subtitle{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .clock-value{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=clock>
+        <canvas id="yaw_canvas" height="400px" width="400px" class=clock-canvas></canvas>
+        <span class="clock-subtitle">Yaw</span>
+        <span id ="yaw_value" class="clock-value">0.0</span>
+    </div>
+
+    
+    <div class=clock>
+        <canvas id="pitch_canvas"  height="400px" width="400px" class="clock-canvas"></canvas>
+        <span class="clock-subtitle">Pitch</span>
+        <span id ="pitch_value" class="clock-value">0.0</span>
+    </div>
+    
+
+    <div class="clock">
+        <canvas id="roll_canvas"  height="400px" width="400px" class="clock-canvas"></canvas>
+        <span class="clock-subtitle">Roll</span>
+        <span id ="roll_value" class="clock-value">0.0</span>
+    </div>
+    
+
+
+    <script>
+
+        const yaw_canvas = document.getElementById("yaw_canvas");
+        const yaw_ctx = yaw_canvas.getContext("2d");
+        const yaw_value = document.getElementById("yaw_value");
+
+        const pitch_canvas = document.getElementById("pitch_canvas");
+        const pitch_ctx = pitch_canvas.getContext("2d");
+        const pitch_value = document.getElementById("pitch_value");
+
+        const roll_canvas = document.getElementById("roll_canvas");
+        const roll_ctx = roll_canvas.getContext("2d");
+        const roll_value = document.getElementById("roll_value");
+
+        let radius = yaw_canvas.height / 2;
+
+
+        const pi = 3.14;
+
+        var yaw_angle = 0.0;
+        var pitch_angle = 0.0;
+        var roll_angle = 0.0;
+
+        function startDrawing(ctx, radius){
+            ctx.translate(radius, radius);
+        }
+
+        function drawClockBackground(ctx) {
+            ctx.beginPath();
+            ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+            ctx.fillStyle = "white";
+            ctx.fill();
+        }
+
+        function updateDirection(angle) {
+            fetch('/api/ecompass/')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.data !== undefined && data.data !== null) {
+                        yaw_angle = parseFloat(data.data.yaw);
+                        pitch_angle = parseFloat(data.data.pitch);
+                        roll_angle = parseFloat(data.data.roll);
+                        
+                        yaw_value.innerHTML = yaw_angle.toFixed(2) + " deg";
+                        pitch_value.innerHTML = yaw_angle.toFixed(2) + " deg";
+                        roll_value.innerHTML = yaw_angle.toFixed(2) + " deg";
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao buscar dados:', error);
+                });
+                
+
+        }
+
+        function drawHeading(ctx, radius, angle) {
+            let drawAngle = (-1) * degToRad(angle);
+            drawHand(ctx, drawAngle, radius * 0.5, radius * 0.07);
+        }
+
+        function drawHand(ctx, pos, length, width) {
+            ctx.save();                      // Salva o estado atual do contexto
+            ctx.beginPath();                // Inicia um novo caminho
+            ctx.lineWidth = width;
+            ctx.lineCap = "round";
+            ctx.rotate(pos);                // Aplica a rotação
+            ctx.moveTo(0, 0);
+            ctx.lineTo(0, -length);
+            ctx.stroke();                   // Desenha a linha
+            ctx.restore();                  // Restaura o contexto (remove rotação)
+        }
+
+        function clearCanvas(ctx, canvas) {
+            ctx.clearRect(-canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
+        }
+
+        function drawClock(ctx, canvas, radius, angle){
+            clearCanvas(ctx, canvas);
+            drawClockBackground(ctx);
+            drawHeading(ctx, radius, angle);
+        }
+
+        function animate() {
+            drawClock(yaw_ctx, yaw_canvas, radius, yaw_angle);
+            drawClock(pitch_ctx, pitch_canvas, radius, pitch_angle);
+            drawClock(roll_ctx, roll_canvas, radius, roll_angle);
+            requestAnimationFrame(animate);
+        }
+
+        function degToRad(deg) {
+            return deg * 0.0174533
+        }
+
+        setInterval(updateDirection, 200, yaw_angle); // Atualiza a cada 200ms
+        setInterval(updateDirection, 200, pitch_angle);
+        setInterval(updateDirection, 200, roll_angle);
+        startDrawing(yaw_ctx, radius);
+        startDrawing(pitch_ctx, radius);
+        startDrawing(roll_ctx, radius);
+        requestAnimationFrame(animate);
+    </script>
+
+</body>
+
+</html>
