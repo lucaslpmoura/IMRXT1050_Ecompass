@@ -19,7 +19,7 @@ This application launches an HTTP Server that display the data aquired from the 
 5. Run in debug mode
 
 There will be also information in the serial console. By default it uses the UART port, but you can change it to semihost mode in the project configurations.
-By default it uses DHCP to find an suitable IP address, but you can change LWIP configurations to set an fixed address.
+It uses DHCP to find an suitable IP address, but you can change LWIP configurations to set an fixed address.
 
 ## Usage ##
 
@@ -27,7 +27,7 @@ The following endpoints, alongside the LWIP defaults, are avaiable at the web se
 - /gui/ecompass - the interface shown in the picture above
 - /gui/button - debug page showing the number of times the user button (SW8) has been pressed
 - /api/ecompass - JSON data from the ecompass readings
-- /api/ecompass - JSON data from the button readings
+- /api/button - JSON data from the button readings
 
 ## Documentation ## 
 
