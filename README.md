@@ -5,6 +5,8 @@
 
 This application launches an HTTP Server that display the data aquired from the onboard FXOS8700CQ Ecompass.
 
+Application developed as the result of [this paper](https://zenodo.org/records/15472095).
+
 ## Requirements ## 
 - NXP IMRXT1050-EVKB Evaluation Board
 - MCUXpresso IDE
